@@ -1,0 +1,9 @@
+<map id="GameLoop" name="GameLoop">
+<area shape="rect" id="node2" href="$d0/da9/_game_loopcl_07viejo_08_8c.html#a6dbcf3456729353c265b574a8a95f305" title="menu" alt="" coords="149,5,203,32"/>
+<area shape="rect" id="node3" href="$d0/da9/_game_loopcl_07viejo_08_8c.html#a853ef937b82d011d84a89428dbb6e96e" title="cargar_ip" alt="" coords="139,56,213,83"/>
+<area shape="rect" id="node6" href="$d0/da9/_game_loopcl_07viejo_08_8c.html#a3f452e63ec70d8d3b4186dac3b5b8c98" title="partida" alt="" coords="145,107,207,133"/>
+<area shape="rect" id="node8" href="$d0/da9/_game_loopcl_07viejo_08_8c.html#ae4f71ac2159974a5c5f5d81a1817513d" title="fin" alt="" coords="157,157,195,184"/>
+<area shape="rect" id="node4" href="$d0/da9/_game_loopcl_07viejo_08_8c.html#a15a860400c31e58bbb536e3a7936b1e4" title="Inicializa el socket para jugar en red. " alt="" coords="277,56,369,83"/>
+<area shape="rect" id="node5" href="$d9/d7d/src__cl_2funcionesred_8h.html#a4866b2d37ffc80c5ba705d3fcd1e0ecf" title="error" alt="" coords="433,81,481,108"/>
+<area shape="rect" id="node7" href="$d9/d7d/src__cl_2funcionesred_8h.html#aea187a09760544e9748a675e05ecfc78" title="Manda las variables por red. " alt="" coords="261,107,385,133"/>
+</map>

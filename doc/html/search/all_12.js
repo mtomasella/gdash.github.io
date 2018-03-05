@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['t_5faparicion',['t_aparicion',['../da/da9/structniveles.html#a60685e398be92db1dc552668fd9d3784',1,'niveles']]],
+  ['t_5fnivel',['t_nivel',['../d7/df2/structauxpartida.html#a0f19d382c1cc886f999821c34b398400',1,'auxpartida']]],
+  ['tecla',['tecla',['../d6/d71/structvariablescliente.html#abbe50bb481686e062f73ca3287e96963',1,'variablescliente']]],
+  ['temajuego',['temajuego',['../d6/df4/structini__var.html#a8db596e68ff6e538be24199e5acc3e03',1,'ini_var']]],
+  ['temamenu',['temamenu',['../d6/df4/structini__var.html#a81f19c7f9b970e905f49c73d084cc447',1,'ini_var']]],
+  ['timer',['timer',['../d6/df4/structini__var.html#a1dac62d7962f10ffc3daca884c865444',1,'ini_var']]],
+  ['timer2',['timer2',['../d6/df4/structini__var.html#a35c6036c1c83529b212938b9398c0027',1,'ini_var']]],
+  ['tipo1',['tipo1',['../d7/df2/structauxpartida.html#ab25f827e8f1472fcdaf253f9393242d4',1,'auxpartida']]],
+  ['tipo2',['tipo2',['../d7/df2/structauxpartida.html#af0a9c67b0ee40f4adbd9ad2144e1ec7a',1,'auxpartida']]],
+  ['tipo3',['tipo3',['../d7/df2/structauxpartida.html#a0da293d704025e34cf83d0a233919712',1,'auxpartida']]],
+  ['tipo4',['tipo4',['../d7/df2/structauxpartida.html#ae69bcca454d2957064a58ae72e7d4a76',1,'auxpartida']]],
+  ['tipo5',['tipo5',['../d7/df2/structauxpartida.html#a79ff3a32223ebc1f82dceb6a8ef592bd',1,'auxpartida']]],
+  ['tipo6',['tipo6',['../d7/df2/structauxpartida.html#a58682682df500ac560d86e842b88c1a6',1,'auxpartida']]],
+  ['tipo7',['tipo7',['../d7/df2/structauxpartida.html#a5a7985c3df41a20803ac8cbe8d404f75',1,'auxpartida']]],
+  ['tipo8',['tipo8',['../d7/df2/structauxpartida.html#acfa3d1cfb8c97b504a83f617de0bff3f',1,'auxpartida']]],
+  ['tipo9',['tipo9',['../d7/df2/structauxpartida.html#a46a03c94a14c7ba9d5399d6aa920fbd5',1,'auxpartida']]]
+];

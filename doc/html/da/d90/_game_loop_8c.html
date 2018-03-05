@@ -1,0 +1,498 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>GeometryDash: Referencia del Archivo src/GameLoop.c</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Logo.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">GeometryDash
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="../../annotated.html"><span>Estructuras&#160;de&#160;Datos</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="../../globals.html"><span>Globales</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo GameLoop.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;allegro5/allegro.h&gt;</code><br />
+<code>#include &quot;allegro5/allegro_image.h&quot;</code><br />
+<code>#include &quot;allegro5/allegro_native_dialog.h&quot;</code><br />
+<code>#include &quot;allegro5/allegro_font.h&quot;</code><br />
+<code>#include &quot;allegro5/allegro_ttf.h&quot;</code><br />
+<code>#include &lt;allegro5/allegro_primitives.h&gt;</code><br />
+<code>#include &lt;allegro5/allegro_audio.h&gt;</code><br />
+<code>#include &lt;allegro5/allegro_acodec.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d09/datos_8h_source.html">datos.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Dependencia gráfica adjunta para GameLoop.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d28/_game_loop_8c__incl.png" border="0" usemap="#src_2_game_loop_8c" alt=""/></div>
+<map name="src_2_game_loop_8c" id="src_2_game_loop_8c">
+<area shape="rect" id="node13" href="../../db/d09/datos_8h.html" title="datos.h" alt="" coords="628,80,691,107"/>
+</map>
+</div>
+</div>
+<p><a href="../../da/d90/_game_loop_8c_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:add570ea1d203a6305702bd9b68155180"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d90/_game_loop_8c.html#add570ea1d203a6305702bd9b68155180">menu</a> (<a class="el" href="../../d6/df4/structini__var.html">ini_var</a> **mvar, int *mvida, int *mscore, int *mnivel)</td></tr>
+<tr class="separator:add570ea1d203a6305702bd9b68155180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbd1e2c151901352a2b9b3bfcda37aad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d90/_game_loop_8c.html#acbd1e2c151901352a2b9b3bfcda37aad">ingresarip</a> (<a class="el" href="../../d6/df4/structini__var.html">ini_var</a> **ivar)</td></tr>
+<tr class="separator:acbd1e2c151901352a2b9b3bfcda37aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c68040fb9a4517324501bc42a01c610"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d90/_game_loop_8c.html#a5c68040fb9a4517324501bc42a01c610">partida</a> (<a class="el" href="../../d6/df4/structini__var.html">ini_var</a> **pvar, <a class="el" href="../../da/da9/structniveles.html">niveles</a> **aux_niv2, int *pvida, int *pscore, int *pnivel, <a class="el" href="../../d8/d9e/structposicion.html">posicion</a> *ppos, <a class="el" href="../../d7/df2/structauxpartida.html">auxpartida</a> *pauxpar, <a class="el" href="../../df/d21/structframe_explosion.html">frameExplosion</a> *pfE, <a class="el" href="../../d0/d77/structframe_monedita.html">frameMonedita</a> *pfM)</td></tr>
+<tr class="separator:a5c68040fb9a4517324501bc42a01c610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84fb47282a6dce75e64774583a69f985"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d90/_game_loop_8c.html#a84fb47282a6dce75e64774583a69f985">fin</a> (<a class="el" href="../../d6/df4/structini__var.html">ini_var</a> **fvar, <a class="el" href="../../d7/df2/structauxpartida.html">auxpartida</a> *pauxpar)</td></tr>
+<tr class="separator:a84fb47282a6dce75e64774583a69f985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19fbf92f5ace44a07cca0d242178d3d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d90/_game_loop_8c.html#a19fbf92f5ace44a07cca0d242178d3d8">Niveles</a> (<a class="el" href="../../da/da9/structniveles.html">niveles</a> **INI1)</td></tr>
+<tr class="separator:a19fbf92f5ace44a07cca0d242178d3d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1157320f1883a10535c393088502fd9c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d90/_game_loop_8c.html#a1157320f1883a10535c393088502fd9c">GameLoop</a> (<a class="el" href="../../d6/df4/structini__var.html">ini_var</a> **var)</td></tr>
+<tr class="separator:a1157320f1883a10535c393088502fd9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:afca0db9c0e472d6c9aefd3022751d0ba"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d90/_game_loop_8c.html#afca0db9c0e472d6c9aefd3022751d0ba">SCREEN_W</a> = 1280</td></tr>
+<tr class="separator:afca0db9c0e472d6c9aefd3022751d0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42c075b5e54349391d38c5d53c4eddde"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d90/_game_loop_8c.html#a42c075b5e54349391d38c5d53c4eddde">SCREEN_H</a> = 720</td></tr>
+<tr class="separator:a42c075b5e54349391d38c5d53c4eddde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7958a3302b436c1d2041a8587ad9562f"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d90/_game_loop_8c.html#a7958a3302b436c1d2041a8587ad9562f">BOUNCER_SIZE</a> = 32</td></tr>
+<tr class="separator:a7958a3302b436c1d2041a8587ad9562f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7827adc9e8f5e0d36964c29e03b5a454"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d90/_game_loop_8c.html#a7827adc9e8f5e0d36964c29e03b5a454">maxFrameExplosion</a> = 10</td></tr>
+<tr class="separator:a7827adc9e8f5e0d36964c29e03b5a454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a023c0277be9db9077060123835980d1f"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d90/_game_loop_8c.html#a023c0277be9db9077060123835980d1f">maxFrameMonedita</a> = 4</td></tr>
+<tr class="separator:a023c0277be9db9077060123835980d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a class="anchor" id="a84fb47282a6dce75e64774583a69f985"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/df4/structini__var.html">ini_var</a> **&#160;</td>
+          <td class="paramname"><em>fvar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/df2/structauxpartida.html">auxpartida</a> *&#160;</td>
+          <td class="paramname"><em>pauxpar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="../../da/d90/_game_loop_8c_source.html#l00777">777</a> del archivo <a class="el" href="../../da/d90/_game_loop_8c_source.html">GameLoop.c</a>.</p>
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d90/_game_loop_8c_a84fb47282a6dce75e64774583a69f985_icgraph.png" border="0" usemap="#da/d90/_game_loop_8c_a84fb47282a6dce75e64774583a69f985_icgraph" alt=""/></div>
+<map name="da/d90/_game_loop_8c_a84fb47282a6dce75e64774583a69f985_icgraph" id="da/d90/_game_loop_8c_a84fb47282a6dce75e64774583a69f985_icgraph">
+<area shape="rect" id="node2" href="../../da/d90/_game_loop_8c.html#a1157320f1883a10535c393088502fd9c" title="GameLoop" alt="" coords="92,5,177,32"/>
+<area shape="rect" id="node3" href="../../d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main. " alt="" coords="225,5,276,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1157320f1883a10535c393088502fd9c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GameLoop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/df4/structini__var.html">ini_var</a> **&#160;</td>
+          <td class="paramname"><em>var</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="../../da/d90/_game_loop_8c_source.html#l00939">939</a> del archivo <a class="el" href="../../da/d90/_game_loop_8c_source.html">GameLoop.c</a>.</p>
+
+<p><div class="dynheader">
+Gráfico de llamadas para esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d90/_game_loop_8c_a1157320f1883a10535c393088502fd9c_cgraph.png" border="0" usemap="#da/d90/_game_loop_8c_a1157320f1883a10535c393088502fd9c_cgraph" alt=""/></div>
+<map name="da/d90/_game_loop_8c_a1157320f1883a10535c393088502fd9c_cgraph" id="da/d90/_game_loop_8c_a1157320f1883a10535c393088502fd9c_cgraph">
+<area shape="rect" id="node2" href="../../da/d90/_game_loop_8c.html#a19fbf92f5ace44a07cca0d242178d3d8" title="Niveles" alt="" coords="146,5,209,32"/>
+<area shape="rect" id="node3" href="../../da/d90/_game_loop_8c.html#add570ea1d203a6305702bd9b68155180" title="menu" alt="" coords="150,56,205,83"/>
+<area shape="rect" id="node4" href="../../da/d90/_game_loop_8c.html#acbd1e2c151901352a2b9b3bfcda37aad" title="ingresarip" alt="" coords="139,107,216,133"/>
+<area shape="rect" id="node5" href="../../da/d90/_game_loop_8c.html#a5c68040fb9a4517324501bc42a01c610" title="partida" alt="" coords="147,157,208,184"/>
+<area shape="rect" id="node6" href="../../da/d90/_game_loop_8c.html#a84fb47282a6dce75e64774583a69f985" title="fin" alt="" coords="158,208,197,235"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d90/_game_loop_8c_a1157320f1883a10535c393088502fd9c_icgraph.png" border="0" usemap="#da/d90/_game_loop_8c_a1157320f1883a10535c393088502fd9c_icgraph" alt=""/></div>
+<map name="da/d90/_game_loop_8c_a1157320f1883a10535c393088502fd9c_icgraph" id="da/d90/_game_loop_8c_a1157320f1883a10535c393088502fd9c_icgraph">
+<area shape="rect" id="node2" href="../../d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main. " alt="" coords="139,5,189,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acbd1e2c151901352a2b9b3bfcda37aad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ingresarip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/df4/structini__var.html">ini_var</a> **&#160;</td>
+          <td class="paramname"><em>ivar</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="../../da/d90/_game_loop_8c_source.html#l00138">138</a> del archivo <a class="el" href="../../da/d90/_game_loop_8c_source.html">GameLoop.c</a>.</p>
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d90/_game_loop_8c_acbd1e2c151901352a2b9b3bfcda37aad_icgraph.png" border="0" usemap="#da/d90/_game_loop_8c_acbd1e2c151901352a2b9b3bfcda37aad_icgraph" alt=""/></div>
+<map name="da/d90/_game_loop_8c_acbd1e2c151901352a2b9b3bfcda37aad_icgraph" id="da/d90/_game_loop_8c_acbd1e2c151901352a2b9b3bfcda37aad_icgraph">
+<area shape="rect" id="node2" href="../../da/d90/_game_loop_8c.html#a1157320f1883a10535c393088502fd9c" title="GameLoop" alt="" coords="131,5,216,32"/>
+<area shape="rect" id="node3" href="../../d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main. " alt="" coords="264,5,315,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="add570ea1d203a6305702bd9b68155180"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int menu </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/df4/structini__var.html">ini_var</a> **&#160;</td>
+          <td class="paramname"><em>mvar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>mvida</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>mscore</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>mnivel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="../../da/d90/_game_loop_8c_source.html#l00024">24</a> del archivo <a class="el" href="../../da/d90/_game_loop_8c_source.html">GameLoop.c</a>.</p>
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d90/_game_loop_8c_add570ea1d203a6305702bd9b68155180_icgraph.png" border="0" usemap="#da/d90/_game_loop_8c_add570ea1d203a6305702bd9b68155180_icgraph" alt=""/></div>
+<map name="da/d90/_game_loop_8c_add570ea1d203a6305702bd9b68155180_icgraph" id="da/d90/_game_loop_8c_add570ea1d203a6305702bd9b68155180_icgraph">
+<area shape="rect" id="node2" href="../../da/d90/_game_loop_8c.html#a1157320f1883a10535c393088502fd9c" title="GameLoop" alt="" coords="108,5,193,32"/>
+<area shape="rect" id="node3" href="../../d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main. " alt="" coords="241,5,292,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a19fbf92f5ace44a07cca0d242178d3d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Niveles </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/da9/structniveles.html">niveles</a> **&#160;</td>
+          <td class="paramname"><em>INI1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="../../da/d90/_game_loop_8c_source.html#l00891">891</a> del archivo <a class="el" href="../../da/d90/_game_loop_8c_source.html">GameLoop.c</a>.</p>
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d90/_game_loop_8c_a19fbf92f5ace44a07cca0d242178d3d8_icgraph.png" border="0" usemap="#da/d90/_game_loop_8c_a19fbf92f5ace44a07cca0d242178d3d8_icgraph" alt=""/></div>
+<map name="da/d90/_game_loop_8c_a19fbf92f5ace44a07cca0d242178d3d8_icgraph" id="da/d90/_game_loop_8c_a19fbf92f5ace44a07cca0d242178d3d8_icgraph">
+<area shape="rect" id="node2" href="../../da/d90/_game_loop_8c.html#a1157320f1883a10535c393088502fd9c" title="GameLoop" alt="" coords="116,5,201,32"/>
+<area shape="rect" id="node4" href="../../d1/d96/maincl_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="133,56,184,83"/>
+<area shape="rect" id="node3" href="../../d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main. " alt="" coords="249,5,300,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5c68040fb9a4517324501bc42a01c610"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int partida </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/df4/structini__var.html">ini_var</a> **&#160;</td>
+          <td class="paramname"><em>pvar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/da9/structniveles.html">niveles</a> **&#160;</td>
+          <td class="paramname"><em>aux_niv2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>pvida</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>pscore</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>pnivel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d9e/structposicion.html">posicion</a> *&#160;</td>
+          <td class="paramname"><em>ppos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/df2/structauxpartida.html">auxpartida</a> *&#160;</td>
+          <td class="paramname"><em>pauxpar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/d21/structframe_explosion.html">frameExplosion</a> *&#160;</td>
+          <td class="paramname"><em>pfE</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d77/structframe_monedita.html">frameMonedita</a> *&#160;</td>
+          <td class="paramname"><em>pfM</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="../../da/d90/_game_loop_8c_source.html#l00353">353</a> del archivo <a class="el" href="../../da/d90/_game_loop_8c_source.html">GameLoop.c</a>.</p>
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d90/_game_loop_8c_a5c68040fb9a4517324501bc42a01c610_icgraph.png" border="0" usemap="#da/d90/_game_loop_8c_a5c68040fb9a4517324501bc42a01c610_icgraph" alt=""/></div>
+<map name="da/d90/_game_loop_8c_a5c68040fb9a4517324501bc42a01c610_icgraph" id="da/d90/_game_loop_8c_a5c68040fb9a4517324501bc42a01c610_icgraph">
+<area shape="rect" id="node2" href="../../da/d90/_game_loop_8c.html#a1157320f1883a10535c393088502fd9c" title="GameLoop" alt="" coords="115,5,200,32"/>
+<area shape="rect" id="node3" href="../../d0/d29/main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main. " alt="" coords="248,5,299,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a class="anchor" id="a7958a3302b436c1d2041a8587ad9562f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int BOUNCER_SIZE = 32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="../../da/d90/_game_loop_8c_source.html#l00019">19</a> del archivo <a class="el" href="../../da/d90/_game_loop_8c_source.html">GameLoop.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7827adc9e8f5e0d36964c29e03b5a454"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int maxFrameExplosion = 10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="../../da/d90/_game_loop_8c_source.html#l00021">21</a> del archivo <a class="el" href="../../da/d90/_game_loop_8c_source.html">GameLoop.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a023c0277be9db9077060123835980d1f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int maxFrameMonedita = 4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="../../da/d90/_game_loop_8c_source.html#l00022">22</a> del archivo <a class="el" href="../../da/d90/_game_loop_8c_source.html">GameLoop.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a42c075b5e54349391d38c5d53c4eddde"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int SCREEN_H = 720</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="../../da/d90/_game_loop_8c_source.html#l00018">18</a> del archivo <a class="el" href="../../da/d90/_game_loop_8c_source.html">GameLoop.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afca0db9c0e472d6c9aefd3022751d0ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int SCREEN_W = 1280</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="../../da/d90/_game_loop_8c_source.html#l00017">17</a> del archivo <a class="el" href="../../da/d90/_game_loop_8c_source.html">GameLoop.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

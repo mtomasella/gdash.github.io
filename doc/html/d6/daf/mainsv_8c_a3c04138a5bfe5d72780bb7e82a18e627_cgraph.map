@@ -1,0 +1,13 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$d3/db9/sv_2funciones_8h.html#a667e33e65772161a5b63cd45279c4678" title="Inicializa el socket para jugar en red. " alt="" coords="104,5,199,32"/>
+<area shape="rect" id="node4" href="$db/d48/funciones_8h.html#a80511be4899bafdd2b7e740aab9c5d4f" title="Inicializar" alt="" coords="113,56,189,83"/>
+<area shape="rect" id="node5" href="$db/d48/funciones_8h.html#abd39c866b81530f18914cd5607521ccb" title="Niveles" alt="" coords="120,107,183,133"/>
+<area shape="rect" id="node6" href="$db/d48/funciones_8h.html#a6c24fb606e87d19baf6e99f050e4cd0c" title="GameLoop" alt="" coords="109,157,194,184"/>
+<area shape="rect" id="node12" href="$db/d41/cl_2funciones_8h.html#a3df38cd46de0e4ec85a6263c8de5615e" title="Libera todos los puntero y la lista de los enemigos. " alt="" coords="121,208,182,235"/>
+<area shape="rect" id="node3" href="$d9/d7d/src__cl_2funcionesred_8h.html#a4866b2d37ffc80c5ba705d3fcd1e0ecf" title="error" alt="" coords="261,5,309,32"/>
+<area shape="rect" id="node7" href="$da/d90/_game_loop_8c.html#a19fbf92f5ace44a07cca0d242178d3d8" title="Niveles" alt="" coords="254,56,317,83"/>
+<area shape="rect" id="node8" href="$da/d90/_game_loop_8c.html#add570ea1d203a6305702bd9b68155180" title="menu" alt="" coords="258,107,313,133"/>
+<area shape="rect" id="node9" href="$da/d90/_game_loop_8c.html#acbd1e2c151901352a2b9b3bfcda37aad" title="ingresarip" alt="" coords="247,157,324,184"/>
+<area shape="rect" id="node10" href="$da/d90/_game_loop_8c.html#a5c68040fb9a4517324501bc42a01c610" title="partida" alt="" coords="255,208,316,235"/>
+<area shape="rect" id="node11" href="$da/d90/_game_loop_8c.html#a84fb47282a6dce75e64774583a69f985" title="fin" alt="" coords="266,259,305,285"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="error" name="error">
+<area shape="rect" id="node2" href="$d9/d7d/src__cl_2funcionesred_8h.html#aea187a09760544e9748a675e05ecfc78" title="Manda las variables por red. " alt="" coords="101,107,225,133"/>
+<area shape="rect" id="node7" href="$d9/df7/_geometry_dash__client_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="291,157,341,184"/>
+<area shape="rect" id="node8" href="$d3/d9a/_game_loopcl_8c.html#a15a860400c31e58bbb536e3a7936b1e4" title="Inicializa el socket para jugar en red. " alt="" coords="117,208,209,235"/>
+<area shape="rect" id="node10" href="$df/dfb/_game_loopsv_8c.html#a9132462e6c049c24726262f5e722d3f9" title="Pantalla de esperando conexion. " alt="" coords="131,259,196,285"/>
+<area shape="rect" id="node12" href="$dc/d93/_inicializarsv_8c.html#a01885906f29b0a9a3b0663ee9e5b4617" title="Inicializa el socket para jugar en red. " alt="" coords="116,309,211,336"/>
+<area shape="rect" id="node3" href="$d3/d9a/_game_loopcl_8c.html#ac38bb7fd1e23fd6f29e6efe12e59cdad" title="Manda las posiciones de los objetos del juego por red. " alt="" coords="278,5,354,32"/>
+<area shape="rect" id="node5" href="$d3/d9a/_game_loopcl_8c.html#acdbd57e61af1b50ffd5b19927367825d" title="Pantalla de ejecucion del juego. " alt="" coords="285,56,347,83"/>
+<area shape="rect" id="node6" href="$d3/d9a/_game_loopcl_8c.html#af22cb0f990376b04d10184f697588f5a" title="Pantalla final de la partida. " alt="" coords="297,107,335,133"/>
+<area shape="rect" id="node4" href="$d3/d9a/_game_loopcl_8c.html#a222b5afcfe92f13b9b54ca8daedcdcd2" title="Funcion principal. Es un gran loop con un loop para cada pantalla. " alt="" coords="407,81,492,108"/>
+<area shape="rect" id="node9" href="$d3/d9a/_game_loopcl_8c.html#a9433aed9231c80acac0b8ed7cd551346" title="Pantalla de carga de IP. " alt="" coords="279,208,353,235"/>
+<area shape="rect" id="node11" href="$df/dfb/_game_loopsv_8c.html#a0ae36f1993a3d03dffa6d5c409e3cbce" title="Funcion principal. Es un gran loop con un loop para cada pantalla. " alt="" coords="273,259,359,285"/>
+<area shape="rect" id="node13" href="$d6/daf/mainsv_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="291,309,341,336"/>
+</map>
