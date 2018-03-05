@@ -1,0 +1,4 @@
+<map id="inicializar_cl" name="inicializar_cl">
+<area shape="rect" id="node2" href="$d3/d9a/_game_loopcl_8c.html#a9433aed9231c80acac0b8ed7cd551346" title="Pantalla de carga de IP. " alt="" coords="145,5,220,32"/>
+<area shape="rect" id="node3" href="$d3/d9a/_game_loopcl_8c.html#a222b5afcfe92f13b9b54ca8daedcdcd2" title="Funcion principal. Es un gran loop con un loop para cada pantalla. " alt="" coords="268,5,353,32"/>
+</map>

@@ -1,0 +1,663 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>GeometryDash: Referencia del Archivo src_sv/GameLoopsv.c</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../Logo.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">GeometryDash
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="../../annotated.html"><span>Estructuras&#160;de&#160;Datos</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="../../globals.html"><span>Globales</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_b36da88a95515195523d111153e13320.html">src_sv</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo GameLoopsv.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>GameLoop y sus funciones servidor.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;allegro5/allegro.h&gt;</code><br />
+<code>#include &quot;allegro5/allegro_image.h&quot;</code><br />
+<code>#include &quot;allegro5/allegro_native_dialog.h&quot;</code><br />
+<code>#include &quot;allegro5/allegro_font.h&quot;</code><br />
+<code>#include &quot;allegro5/allegro_ttf.h&quot;</code><br />
+<code>#include &lt;allegro5/allegro_primitives.h&gt;</code><br />
+<code>#include &lt;allegro5/allegro_audio.h&gt;</code><br />
+<code>#include &lt;allegro5/allegro_acodec.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;sys/types.h&gt;</code><br />
+<code>#include &lt;sys/socket.h&gt;</code><br />
+<code>#include &lt;netinet/in.h&gt;</code><br />
+<code>#include &lt;netdb.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../df/d92/src__sv_2funcionesred_8h_source.html">funcionesred.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Dependencia gráfica adjunta para GameLoopsv.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d8a/_game_loopsv_8c__incl.png" border="0" usemap="#src__sv_2_game_loopsv_8c" alt=""/></div>
+<map name="src__sv_2_game_loopsv_8c" id="src__sv_2_game_loopsv_8c">
+<area shape="rect" id="node18" href="../../df/d92/src__sv_2funcionesred_8h.html" title="funcionesred.h" alt="" coords="1024,80,1129,107"/>
+<area shape="rect" id="node19" href="../../de/d51/sv_2datos_8h.html" title="datos.h" alt="" coords="1056,155,1119,181"/>
+</map>
+</div>
+</div>
+<p><a href="../../df/dfb/_game_loopsv_8c_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a9d4d8cd0418058c59efb49cd73a96bf9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfb/_game_loopsv_8c.html#a9d4d8cd0418058c59efb49cd73a96bf9">partida</a> (<a class="el" href="../../d6/df4/structini__var.html">ini_var</a> **pvar, <a class="el" href="../../d8/d9e/structposicion.html">posicion</a> *ppos, <a class="el" href="../../d7/df2/structauxpartida.html">auxpartida</a> *pauxpar, <a class="el" href="../../df/d21/structframe_explosion.html">frameExplosion</a> *pfE, <a class="el" href="../../d0/d77/structframe_monedita.html">frameMonedita</a> *pfM)</td></tr>
+<tr class="memdesc:a9d4d8cd0418058c59efb49cd73a96bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pantalla de ejecucion del juego.  <a href="#a9d4d8cd0418058c59efb49cd73a96bf9">Más...</a><br /></td></tr>
+<tr class="separator:a9d4d8cd0418058c59efb49cd73a96bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6ce5966d0000e8f7b408c410cec6874"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfb/_game_loopsv_8c.html#ae6ce5966d0000e8f7b408c410cec6874">fin</a> (<a class="el" href="../../d6/df4/structini__var.html">ini_var</a> **fvar, <a class="el" href="../../d7/df2/structauxpartida.html">auxpartida</a> *fauxpar, <a class="el" href="../../d5/d36/structvariablesservidor.html">variablesservidor</a> *fvarsv)</td></tr>
+<tr class="memdesc:ae6ce5966d0000e8f7b408c410cec6874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pantalla final de la partida.  <a href="#ae6ce5966d0000e8f7b408c410cec6874">Más...</a><br /></td></tr>
+<tr class="separator:ae6ce5966d0000e8f7b408c410cec6874"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9132462e6c049c24726262f5e722d3f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfb/_game_loopsv_8c.html#a9132462e6c049c24726262f5e722d3f9">wait_cx</a> (<a class="el" href="../../d5/d36/structvariablesservidor.html">variablesservidor</a> *varsv, <a class="el" href="../../d6/df4/structini__var.html">ini_var</a> **wvar)</td></tr>
+<tr class="memdesc:a9132462e6c049c24726262f5e722d3f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pantalla de esperando conexion.  <a href="#a9132462e6c049c24726262f5e722d3f9">Más...</a><br /></td></tr>
+<tr class="separator:a9132462e6c049c24726262f5e722d3f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7eed278ab0dd2bd43f2c80f559f82f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfb/_game_loopsv_8c.html#aa7eed278ab0dd2bd43f2c80f559f82f8">receive_data</a> (<a class="el" href="../../d6/df4/structini__var.html">ini_var</a> **rvar, <a class="el" href="../../d5/d36/structvariablesservidor.html">variablesservidor</a> *varsv2, <a class="el" href="../../d8/d9e/structposicion.html">posicion</a> *p, <a class="el" href="../../d7/df2/structauxpartida.html">auxpartida</a> *rauxpar)</td></tr>
+<tr class="memdesc:aa7eed278ab0dd2bd43f2c80f559f82f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recibe las teclas, posiciones de los objetos, vidas y score del juego por red.  <a href="#aa7eed278ab0dd2bd43f2c80f559f82f8">Más...</a><br /></td></tr>
+<tr class="separator:aa7eed278ab0dd2bd43f2c80f559f82f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372ccf033da01800bbcf9246a626e002"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfb/_game_loopsv_8c.html#a372ccf033da01800bbcf9246a626e002">Niveles</a> (<a class="el" href="../../d7/df2/structauxpartida.html">auxpartida</a> **naxpartida)</td></tr>
+<tr class="memdesc:a372ccf033da01800bbcf9246a626e002"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crea una lista con los enemigos leyendo del archivo "n".  <a href="#a372ccf033da01800bbcf9246a626e002">Más...</a><br /></td></tr>
+<tr class="separator:a372ccf033da01800bbcf9246a626e002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d57b08765816f3fafd3c391e0debc12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfb/_game_loopsv_8c.html#a4d57b08765816f3fafd3c391e0debc12">Liberar</a> (<a class="el" href="../../d6/df4/structini__var.html">ini_var</a> **lvar, <a class="el" href="../../d5/d36/structvariablesservidor.html">variablesservidor</a> **lvarsv, <a class="el" href="../../d7/df2/structauxpartida.html">auxpartida</a> **laxpartida, <a class="el" href="../../df/d21/structframe_explosion.html">frameExplosion</a> **lfEx, <a class="el" href="../../d0/d77/structframe_monedita.html">frameMonedita</a> **lfMo)</td></tr>
+<tr class="memdesc:a4d57b08765816f3fafd3c391e0debc12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Libera todos los puntero y la lista de los enemigos.  <a href="#a4d57b08765816f3fafd3c391e0debc12">Más...</a><br /></td></tr>
+<tr class="separator:a4d57b08765816f3fafd3c391e0debc12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ae36f1993a3d03dffa6d5c409e3cbce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfb/_game_loopsv_8c.html#a0ae36f1993a3d03dffa6d5c409e3cbce">GameLoop</a> (<a class="el" href="../../d6/df4/structini__var.html">ini_var</a> **var, <a class="el" href="../../d5/d36/structvariablesservidor.html">variablesservidor</a> *varservidor, <a class="el" href="../../d7/df2/structauxpartida.html">auxpartida</a> **axpartida, <a class="el" href="../../df/d21/structframe_explosion.html">frameExplosion</a> **fEx, <a class="el" href="../../d0/d77/structframe_monedita.html">frameMonedita</a> **fMo)</td></tr>
+<tr class="memdesc:a0ae36f1993a3d03dffa6d5c409e3cbce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion principal. Es un gran loop con un loop para cada pantalla.  <a href="#a0ae36f1993a3d03dffa6d5c409e3cbce">Más...</a><br /></td></tr>
+<tr class="separator:a0ae36f1993a3d03dffa6d5c409e3cbce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:afca0db9c0e472d6c9aefd3022751d0ba"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfb/_game_loopsv_8c.html#afca0db9c0e472d6c9aefd3022751d0ba">SCREEN_W</a> = 1280</td></tr>
+<tr class="separator:afca0db9c0e472d6c9aefd3022751d0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42c075b5e54349391d38c5d53c4eddde"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfb/_game_loopsv_8c.html#a42c075b5e54349391d38c5d53c4eddde">SCREEN_H</a> = 720</td></tr>
+<tr class="separator:a42c075b5e54349391d38c5d53c4eddde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7958a3302b436c1d2041a8587ad9562f"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfb/_game_loopsv_8c.html#a7958a3302b436c1d2041a8587ad9562f">BOUNCER_SIZE</a> = 32</td></tr>
+<tr class="separator:a7958a3302b436c1d2041a8587ad9562f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7827adc9e8f5e0d36964c29e03b5a454"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfb/_game_loopsv_8c.html#a7827adc9e8f5e0d36964c29e03b5a454">maxFrameExplosion</a> = 10</td></tr>
+<tr class="separator:a7827adc9e8f5e0d36964c29e03b5a454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a023c0277be9db9077060123835980d1f"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfb/_game_loopsv_8c.html#a023c0277be9db9077060123835980d1f">maxFrameMonedita</a> = 4</td></tr>
+<tr class="separator:a023c0277be9db9077060123835980d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>GameLoop y sus funciones servidor. </p>
+
+<p>Definición en el archivo <a class="el" href="../../df/dfb/_game_loopsv_8c_source.html">GameLoopsv.c</a>.</p>
+</div><h2 class="groupheader">Documentación de las funciones</h2>
+<a class="anchor" id="ae6ce5966d0000e8f7b408c410cec6874"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/df4/structini__var.html">ini_var</a> **&#160;</td>
+          <td class="paramname"><em>fvar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/df2/structauxpartida.html">auxpartida</a> *&#160;</td>
+          <td class="paramname"><em>fauxpar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/d36/structvariablesservidor.html">variablesservidor</a> *&#160;</td>
+          <td class="paramname"><em>fvarsv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pantalla final de la partida. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fvar</td><td>Estructura con las variables de allegro. </td></tr>
+    <tr><td class="paramname">fvarsv</td><td>Estructura con las variables de red del servidor. </td></tr>
+    <tr><td class="paramname">fauxpar</td><td>Estructura con las variables de la partida. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>2 para que mantenga la pantalla final, 1 para ir a esperando conexion , -1 para salir.</dd></dl>
+<p>Al terminarse las vidas del jugador y perder, se carga esta funcion mostrando las estadisticas (nivel alcanzado y puntaje). </p>
+
+<p>Definición en la línea <a class="el" href="../../df/dfb/_game_loopsv_8c_source.html#l00532">532</a> del archivo <a class="el" href="../../df/dfb/_game_loopsv_8c_source.html">GameLoopsv.c</a>.</p>
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/dfb/_game_loopsv_8c_ae6ce5966d0000e8f7b408c410cec6874_icgraph.png" border="0" usemap="#df/dfb/_game_loopsv_8c_ae6ce5966d0000e8f7b408c410cec6874_icgraph" alt=""/></div>
+<map name="df/dfb/_game_loopsv_8c_ae6ce5966d0000e8f7b408c410cec6874_icgraph" id="df/dfb/_game_loopsv_8c_ae6ce5966d0000e8f7b408c410cec6874_icgraph">
+<area shape="rect" id="node2" href="../../df/dfb/_game_loopsv_8c.html#a0ae36f1993a3d03dffa6d5c409e3cbce" title="Funcion principal. Es un gran loop con un loop para cada pantalla. " alt="" coords="92,5,177,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ae36f1993a3d03dffa6d5c409e3cbce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GameLoop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/df4/structini__var.html">ini_var</a> **&#160;</td>
+          <td class="paramname"><em>var</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/d36/structvariablesservidor.html">variablesservidor</a> *&#160;</td>
+          <td class="paramname"><em>varservidor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/df2/structauxpartida.html">auxpartida</a> **&#160;</td>
+          <td class="paramname"><em>axpartida</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/d21/structframe_explosion.html">frameExplosion</a> **&#160;</td>
+          <td class="paramname"><em>fEx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d77/structframe_monedita.html">frameMonedita</a> **&#160;</td>
+          <td class="paramname"><em>fMo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcion principal. Es un gran loop con un loop para cada pantalla. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">var</td><td>Estructura con las variables de allegro. </td></tr>
+    <tr><td class="paramname">varservidor</td><td>Estructura con las variables de red del cliente. </td></tr>
+    <tr><td class="paramname">axpartida</td><td>Estructura con las variables de la partida. </td></tr>
+    <tr><td class="paramname">fEx</td><td>Estructura con las variables de la explosion. </td></tr>
+    <tr><td class="paramname">fMo</td><td>Estructura con las variables de las moneditas.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Mantiene la ejecucion del juego. Sale del loop cuando el estado del juego es -1. </p>
+
+<p>Definición en la línea <a class="el" href="../../df/dfb/_game_loopsv_8c_source.html#l00946">946</a> del archivo <a class="el" href="../../df/dfb/_game_loopsv_8c_source.html">GameLoopsv.c</a>.</p>
+
+<p><div class="dynheader">
+Gráfico de llamadas para esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/dfb/_game_loopsv_8c_a0ae36f1993a3d03dffa6d5c409e3cbce_cgraph.png" border="0" usemap="#df/dfb/_game_loopsv_8c_a0ae36f1993a3d03dffa6d5c409e3cbce_cgraph" alt=""/></div>
+<map name="df/dfb/_game_loopsv_8c_a0ae36f1993a3d03dffa6d5c409e3cbce_cgraph" id="df/dfb/_game_loopsv_8c_a0ae36f1993a3d03dffa6d5c409e3cbce_cgraph">
+<area shape="rect" id="node2" href="../../df/dfb/_game_loopsv_8c.html#a9132462e6c049c24726262f5e722d3f9" title="Pantalla de esperando conexion. " alt="" coords="153,5,219,32"/>
+<area shape="rect" id="node4" href="../../df/dfb/_game_loopsv_8c.html#a9d4d8cd0418058c59efb49cd73a96bf9" title="Pantalla de ejecucion del juego. " alt="" coords="155,56,217,83"/>
+<area shape="rect" id="node5" href="../../df/dfb/_game_loopsv_8c.html#aa7eed278ab0dd2bd43f2c80f559f82f8" title="Recibe las teclas, posiciones de los objetos, vidas y score del juego por red. " alt="" coords="139,107,233,133"/>
+<area shape="rect" id="node7" href="../../df/dfb/_game_loopsv_8c.html#ae6ce5966d0000e8f7b408c410cec6874" title="Pantalla final de la partida. " alt="" coords="167,157,205,184"/>
+<area shape="rect" id="node3" href="../../d9/d7d/src__cl_2funcionesred_8h.html#a4866b2d37ffc80c5ba705d3fcd1e0ecf" title="error" alt="" coords="319,5,367,32"/>
+<area shape="rect" id="node6" href="../../df/d92/src__sv_2funcionesred_8h.html#a798ad5a9be42944ec06a18eee86367fc" title="Recibe las variables por red. " alt="" coords="281,107,405,133"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4d57b08765816f3fafd3c391e0debc12"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Liberar </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/df4/structini__var.html">ini_var</a> **&#160;</td>
+          <td class="paramname"><em>lvar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/d36/structvariablesservidor.html">variablesservidor</a> **&#160;</td>
+          <td class="paramname"><em>lvarsv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/df2/structauxpartida.html">auxpartida</a> **&#160;</td>
+          <td class="paramname"><em>laxpartida</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/d21/structframe_explosion.html">frameExplosion</a> **&#160;</td>
+          <td class="paramname"><em>lfEx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d77/structframe_monedita.html">frameMonedita</a> **&#160;</td>
+          <td class="paramname"><em>lfMo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Libera todos los puntero y la lista de los enemigos. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lvar</td><td>Estructura con las variables de allegro. </td></tr>
+    <tr><td class="paramname">lvarsv</td><td>Estructura con las variables de red del servidor. </td></tr>
+    <tr><td class="paramname">laxpartida</td><td>Estructura con las variables de la partida. </td></tr>
+    <tr><td class="paramname">lfEx</td><td>Estructura con las variables de la explosion. </td></tr>
+    <tr><td class="paramname">lfMo</td><td>Estructura con las variables de las moneditas. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="../../df/dfb/_game_loopsv_8c_source.html#l00863">863</a> del archivo <a class="el" href="../../df/dfb/_game_loopsv_8c_source.html">GameLoopsv.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a372ccf033da01800bbcf9246a626e002"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Niveles </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/df2/structauxpartida.html">auxpartida</a> **&#160;</td>
+          <td class="paramname"><em>naxpartida</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crea una lista con los enemigos leyendo del archivo "n". </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">naxpartida</td><td>Estructura con las variables de la partida. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>0 si se creo correctamente la lista, -1 si no se pudo leer el archivo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="../../df/dfb/_game_loopsv_8c_source.html#l00814">814</a> del archivo <a class="el" href="../../df/dfb/_game_loopsv_8c_source.html">GameLoopsv.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9d4d8cd0418058c59efb49cd73a96bf9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int partida </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/df4/structini__var.html">ini_var</a> **&#160;</td>
+          <td class="paramname"><em>pvar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d9e/structposicion.html">posicion</a> *&#160;</td>
+          <td class="paramname"><em>ppos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/df2/structauxpartida.html">auxpartida</a> *&#160;</td>
+          <td class="paramname"><em>pauxpar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/d21/structframe_explosion.html">frameExplosion</a> *&#160;</td>
+          <td class="paramname"><em>pfE</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d77/structframe_monedita.html">frameMonedita</a> *&#160;</td>
+          <td class="paramname"><em>pfM</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pantalla de ejecucion del juego. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pvar</td><td>Estructura con las variables de allegro. </td></tr>
+    <tr><td class="paramname">ppos</td><td>Estructura con las variables de las posiciones de cada objeto. </td></tr>
+    <tr><td class="paramname">pauxpar</td><td>Estructura con las variables de la partida. </td></tr>
+    <tr><td class="paramname">pfE</td><td>Estructura con las variables de la explosion. </td></tr>
+    <tr><td class="paramname">pfM</td><td>Estructura con las variables de las moneditas. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>0 para que mantenga el juego, 2 para ir a la pantalla final, cuando muere.</dd></dl>
+<p>La partida se muestra en pantalla. Comienza con 3 vidas desde el nivel 1. A medida que pasa el tiempo, el jugador va pasando de nivel hasta llegar al nivel 5. Se muestran unas moneditas, que al alcanzarlas, el jugador gana mas puntos. El puntaje es incrementado tambien a medida que pasa el tiempo. Los enemigos se muestran en funcion de la lista previamente formada. Al colisionar con uno de ellos se emite un sonido y se quita una vida. Al terminarse las vidas el jugador pierde y la funcion termina. </p>
+
+<p>Definición en la línea <a class="el" href="../../df/dfb/_game_loopsv_8c_source.html#l00033">33</a> del archivo <a class="el" href="../../df/dfb/_game_loopsv_8c_source.html">GameLoopsv.c</a>.</p>
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/dfb/_game_loopsv_8c_a9d4d8cd0418058c59efb49cd73a96bf9_icgraph.png" border="0" usemap="#df/dfb/_game_loopsv_8c_a9d4d8cd0418058c59efb49cd73a96bf9_icgraph" alt=""/></div>
+<map name="df/dfb/_game_loopsv_8c_a9d4d8cd0418058c59efb49cd73a96bf9_icgraph" id="df/dfb/_game_loopsv_8c_a9d4d8cd0418058c59efb49cd73a96bf9_icgraph">
+<area shape="rect" id="node2" href="../../df/dfb/_game_loopsv_8c.html#a0ae36f1993a3d03dffa6d5c409e3cbce" title="Funcion principal. Es un gran loop con un loop para cada pantalla. " alt="" coords="115,5,200,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa7eed278ab0dd2bd43f2c80f559f82f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int receive_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/df4/structini__var.html">ini_var</a> **&#160;</td>
+          <td class="paramname"><em>rvar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/d36/structvariablesservidor.html">variablesservidor</a> *&#160;</td>
+          <td class="paramname"><em>varsv2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d9e/structposicion.html">posicion</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/df2/structauxpartida.html">auxpartida</a> *&#160;</td>
+          <td class="paramname"><em>rauxpar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recibe las teclas, posiciones de los objetos, vidas y score del juego por red. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rvar</td><td>Estructura con las variables de allegro. </td></tr>
+    <tr><td class="paramname">spos</td><td>Estructura con las variables de las posiciones de cada objeto. </td></tr>
+    <tr><td class="paramname">varsv2</td><td>Estructura con las variables de red del servidor. </td></tr>
+    <tr><td class="paramname">rauxpar</td><td>Estructura con las variables de la partida. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="../../df/dfb/_game_loopsv_8c_source.html#l00656">656</a> del archivo <a class="el" href="../../df/dfb/_game_loopsv_8c_source.html">GameLoopsv.c</a>.</p>
+
+<p><div class="dynheader">
+Gráfico de llamadas para esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/dfb/_game_loopsv_8c_aa7eed278ab0dd2bd43f2c80f559f82f8_cgraph.png" border="0" usemap="#df/dfb/_game_loopsv_8c_aa7eed278ab0dd2bd43f2c80f559f82f8_cgraph" alt=""/></div>
+<map name="df/dfb/_game_loopsv_8c_aa7eed278ab0dd2bd43f2c80f559f82f8_cgraph" id="df/dfb/_game_loopsv_8c_aa7eed278ab0dd2bd43f2c80f559f82f8_cgraph">
+<area shape="rect" id="node2" href="../../df/d92/src__sv_2funcionesred_8h.html#a798ad5a9be42944ec06a18eee86367fc" title="Recibe las variables por red. " alt="" coords="148,5,272,32"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/dfb/_game_loopsv_8c_aa7eed278ab0dd2bd43f2c80f559f82f8_icgraph.png" border="0" usemap="#df/dfb/_game_loopsv_8c_aa7eed278ab0dd2bd43f2c80f559f82f8_icgraph" alt=""/></div>
+<map name="df/dfb/_game_loopsv_8c_aa7eed278ab0dd2bd43f2c80f559f82f8_icgraph" id="df/dfb/_game_loopsv_8c_aa7eed278ab0dd2bd43f2c80f559f82f8_icgraph">
+<area shape="rect" id="node2" href="../../df/dfb/_game_loopsv_8c.html#a0ae36f1993a3d03dffa6d5c409e3cbce" title="Funcion principal. Es un gran loop con un loop para cada pantalla. " alt="" coords="148,5,233,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9132462e6c049c24726262f5e722d3f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int wait_cx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d36/structvariablesservidor.html">variablesservidor</a> *&#160;</td>
+          <td class="paramname"><em>varsv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/df4/structini__var.html">ini_var</a> **&#160;</td>
+          <td class="paramname"><em>wvar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pantalla de esperando conexion. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wvar</td><td>Estructura con las variables de allegro. </td></tr>
+    <tr><td class="paramname">varsv</td><td>Estructura con las variables de red del servidor. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>1 para que mantenga la pantalla de esperando conexion, 0 para jugar.</dd></dl>
+<p>En esta pantalla el socket queda a la espera de establecer una conexion con el cliente. Cuando se conecta empieza el juego. </p>
+
+<p>Definición en la línea <a class="el" href="../../df/dfb/_game_loopsv_8c_source.html#l00633">633</a> del archivo <a class="el" href="../../df/dfb/_game_loopsv_8c_source.html">GameLoopsv.c</a>.</p>
+
+<p><div class="dynheader">
+Gráfico de llamadas para esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/dfb/_game_loopsv_8c_a9132462e6c049c24726262f5e722d3f9_cgraph.png" border="0" usemap="#df/dfb/_game_loopsv_8c_a9132462e6c049c24726262f5e722d3f9_cgraph" alt=""/></div>
+<map name="df/dfb/_game_loopsv_8c_a9132462e6c049c24726262f5e722d3f9_cgraph" id="df/dfb/_game_loopsv_8c_a9132462e6c049c24726262f5e722d3f9_cgraph">
+<area shape="rect" id="node2" href="../../d9/d7d/src__cl_2funcionesred_8h.html#a4866b2d37ffc80c5ba705d3fcd1e0ecf" title="error" alt="" coords="119,5,167,32"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/dfb/_game_loopsv_8c_a9132462e6c049c24726262f5e722d3f9_icgraph.png" border="0" usemap="#df/dfb/_game_loopsv_8c_a9132462e6c049c24726262f5e722d3f9_icgraph" alt=""/></div>
+<map name="df/dfb/_game_loopsv_8c_a9132462e6c049c24726262f5e722d3f9_icgraph" id="df/dfb/_game_loopsv_8c_a9132462e6c049c24726262f5e722d3f9_icgraph">
+<area shape="rect" id="node2" href="../../df/dfb/_game_loopsv_8c.html#a0ae36f1993a3d03dffa6d5c409e3cbce" title="Funcion principal. Es un gran loop con un loop para cada pantalla. " alt="" coords="119,5,204,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a class="anchor" id="a7958a3302b436c1d2041a8587ad9562f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int BOUNCER_SIZE = 32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="../../df/dfb/_game_loopsv_8c_source.html#l00028">28</a> del archivo <a class="el" href="../../df/dfb/_game_loopsv_8c_source.html">GameLoopsv.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7827adc9e8f5e0d36964c29e03b5a454"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int maxFrameExplosion = 10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="../../df/dfb/_game_loopsv_8c_source.html#l00030">30</a> del archivo <a class="el" href="../../df/dfb/_game_loopsv_8c_source.html">GameLoopsv.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a023c0277be9db9077060123835980d1f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int maxFrameMonedita = 4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="../../df/dfb/_game_loopsv_8c_source.html#l00031">31</a> del archivo <a class="el" href="../../df/dfb/_game_loopsv_8c_source.html">GameLoopsv.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a42c075b5e54349391d38c5d53c4eddde"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int SCREEN_H = 720</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="../../df/dfb/_game_loopsv_8c_source.html#l00027">27</a> del archivo <a class="el" href="../../df/dfb/_game_loopsv_8c_source.html">GameLoopsv.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afca0db9c0e472d6c9aefd3022751d0ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int SCREEN_W = 1280</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definición en la línea <a class="el" href="../../df/dfb/_game_loopsv_8c_source.html#l00026">26</a> del archivo <a class="el" href="../../df/dfb/_game_loopsv_8c_source.html">GameLoopsv.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>
